@@ -1,0 +1,27 @@
+$small: 400px;
+
+.navbar {
+  i {
+    font-size: 24px;
+  }
+  @media screen and(max-width:$small) {
+    i {
+      font-size: 16px;
+    }
+  }
+}
+
+.card {
+  .btn {
+    i {
+      font-size: 24px;
+    }
+  }
+
+  .user-image {
+    height: 100px;
+    img {
+      height: 100%;
+    }
+  }
+}
