@@ -1,5 +1,4 @@
 const initialState = {
-  isPost: false,
   posts: [],
 };
 
@@ -9,7 +8,6 @@ const postsReducer = (state = initialState, action) => {
   if (type === "GET_POSTS") {
     return {
       ...state,
-      isPost: payload,
       posts: payload,
     };
   }

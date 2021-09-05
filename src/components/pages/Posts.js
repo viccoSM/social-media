@@ -19,7 +19,15 @@ const Posts = () => {
         </div>
         <div className="col-md-9">
           {posts.map((obj, index) => {
-            return <CardPost key={index} data={obj} />;
+            return (
+              <CardPost
+                key={index}
+                data={obj}
+                onClick={() =>
+                  localStorage.setItem("postId", JSON.stringify(obj))
+                }
+              />
+            );
           })}
         </div>
       </div>

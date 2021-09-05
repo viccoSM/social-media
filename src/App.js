@@ -10,6 +10,7 @@ import Photos from "./components/pages/Photos";
 
 import "./assets/style.scss";
 import store from "./redux";
+import Comments from "./components/pages/Comments";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Route exact path="/" component={Users} />
         <Route exact path="/user/:id/posts" component={Posts} />
+        <Route exact path="/user/comments/:id" component={Comments} />
         <Route exact path="/user/:id/album" component={Album} />
         <Route exact path="/user/:id/album/:id" component={Photos} />
       </Router>
