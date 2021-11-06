@@ -1,5 +1,5 @@
-import { Button } from "../../atom";
-import React from "react";
+import { Button } from '../../atom';
+import React from 'react';
 
 const Header = () => {
   return (
@@ -9,10 +9,9 @@ const Header = () => {
           <Button
             type="link"
             href="/"
-            className="btn d-flex  text-decoration-none"
-          >
+            className="btn d-flex  text-decoration-none">
             <i className="fa fa-users me-1"></i>
-            <span className="d-none d-sm-block">users</span>
+            <span className="d-none d-sm-block">Users</span>
           </Button>
         </div>
       </div>
